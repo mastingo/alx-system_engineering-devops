@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# looping using while and iterating using 8th and 4th
+i=1
+x="bad luck"
+y="good luck"
+while [ $i -le 10 ]
+do
+	if [ $i -eq 4 ]; then
+		echo "$x"
+	elif [ $i -eq 8 ]; then
+		echo "$y"
+	else
+		echo "Best School"
+	fi
+	((i++))
+done
