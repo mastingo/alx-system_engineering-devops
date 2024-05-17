@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+#using cut and a while loop to truncate the file name and list my files
 for file in *; do
 	echo $file | cut -d '-' -f 2
 done
