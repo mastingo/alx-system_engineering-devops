@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+#using while loop and if statement to change the 9 iteration to 'hi'
+i=1
+x="Best School"
+y="Hi"
+
+while [ $i -le 10 ]
+do
+	if [ $i -ne 9 ]; then
+		echo "$x";
+	fi
+	if [ $i -eq 9 ]; then 
+		echo "$y"
+	fi
+	((i++))
+done
